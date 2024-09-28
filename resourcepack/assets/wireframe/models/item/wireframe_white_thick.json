@@ -1,0 +1,6 @@
+{
+    "parent": "wireframe:item/wireframe_template",
+    "textures": {
+        "0": "wireframe:item/wireframe_white_thick"
+    }
+}
