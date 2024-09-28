@@ -52,6 +52,9 @@ void main() {
 
         isLine = 1;
         vec3 N = (color.rgb - 127./255.) * 2.;
+        if (abs(N.y) < 0.1) {
+            N = vec3(-Normal.z, 0.0, Normal.x);
+        }
         vec4 linePosStart = ProjMat * VIEW_SCALE * ModelViewMat * vec4(Position, 1.0);
         vec4 linePosEnd = ProjMat * VIEW_SCALE * ModelViewMat * vec4(Position + N, 1.0);
 
