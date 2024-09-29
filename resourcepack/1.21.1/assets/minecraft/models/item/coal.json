@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/coal"
+  },
+  "overrides": [
+    { "predicate": { "custom_model_data": 1 }, "model": "wireframe:item/wireframe_white" },
+    { "predicate": { "custom_model_data": 2 }, "model": "wireframe:item/wireframe_white_thick" },
+    { "predicate": { "custom_model_data": 3 }, "model": "wireframe:item/wireframe_black" }
+  ]
+}

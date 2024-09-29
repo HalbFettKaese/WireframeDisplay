@@ -8,13 +8,13 @@
 
  ```
  # Spawn white wireframe (like from F3 + B):
- /execute align xyz run summon item_display ~ ~ ~ {item: {id:"egg",components: {"minecraft:item_model":"wireframe:wireframe_white"}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0. 5]}}
+ /execute align xyz run summon item_display ~ ~ ~ {item: {id:"egg",components: {"minecraft:item_model":"wireframe:wireframe_white"}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
  
  # Spawn thick white wireframe
- /execute align xyz run summon item_display ~ ~ ~ {item: {id:"egg",components: {"minecraft:item_model":"wireframe:wireframe_white_thick"}} ,transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0. 5]}}
+ /execute align xyz run summon item_display ~ ~ ~ {item: {id:"egg",components: {"minecraft:item_model":"wireframe:wireframe_white_thick"}} ,transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
  
  # Spawn black wireframe (like the block selection outline)
- /execute align xyz run summon item_display ~ ~ ~ {item: {id:"egg",components: {"minecraft:item_model":"wireframe:wireframe_black"}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0. 5]}}
+ /execute align xyz run summon item_display ~ ~ ~ {item: {id:"egg",components: {"minecraft:item_model":"wireframe:wireframe_black"}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
  ```
 
 ## Creating more wireframe types
@@ -53,6 +53,20 @@
  An alternative to making one single 3x3 model in this example would be to create variations of the standard template that have missing edges, so you can combine multiple of these to create a shape with no duplicate edges.
 
  Yet another alternative would be to just make one single 3x3x1 box.
+
+## In earlier versions
+ The pack is designed to work for 1.21.2, but has overlays that let it work in earlier versions. For this, the standard item models are also defined as different `custom_model_data` variants of `coal` items. So in 1.21.1, you can use these commands instead:
+
+ ```
+ # Spawn white wireframe (like from F3 + B):
+ /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:custom_model_data":1}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
+
+ # Spawn thick white wireframe
+ /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:custom_model_data":2}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
+
+ # Spawn black wireframe (like the block selection outline)
+ /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:custom_model_data":3}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
+ ```
 
 ## Credits
  All of the contents of this resource pack were written by me, but the original problem statement as well as some suggestions for debugging have been provided by [Mqxx](https://github.com/Mqxx).

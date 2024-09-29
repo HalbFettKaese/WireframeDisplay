@@ -1,7 +1,19 @@
 {
     "pack":{
        "pack_format": 39,
-       "description": "Adds wireframes"
-    }
- }
- 
+       "description": "Adds wireframes",
+       "supported_formats": { "min_inclusive": 24, "max_inclusive": 39 }
+    },
+    "overlays": {
+      "entries": [
+         {
+            "formats": { "min_inclusive": 24, "max_inclusive": 34 },
+            "directory": "1.21.1"
+         },
+         {
+            "formats": { "min_inclusive": 35, "max_inclusive": 39 },
+            "directory": "1.21.2"
+         }
+      ]
+   }
+}
