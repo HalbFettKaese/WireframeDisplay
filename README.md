@@ -1,5 +1,6 @@
 # WireframeDisplay
- A small resource pack that makes it easy to create and display wireframes that look like vanilla.
+ A small resource pack that makes it easy to create and display wireframes of any size that look like those in vanilla.
+
 ![2024-09-29_00 41 54](https://github.com/user-attachments/assets/c8f58cc7-d075-4c84-8fa7-8e612ae91fd5)
 
 ## Spawning a wireframe display
@@ -36,8 +37,8 @@
  When changing the color or the thickness, you can also choose between editing the first, second or third row to only change the properties of lines along the x, y or z axis.
 
 ## Creating more wireframe shapes
-### Different cuboid shapes
- You don't need to edit anything about the resource pack if you want to change the dimensions of a given wireframe. Just change the `transformation.scale` of the display entity that the wireframe is on, and adjust the translation.
+### Different cuboid sizes
+ You don't need to edit anything about the resource pack if you want to change the size of a given wireframe. Just change the `transformation.scale` of the display entity that the wireframe is on, and adjust the translation.
 
 ### Rotating wireframes
  You can use any horizontal rotation, but sadly, any rotation outside of that axis (such as pitch or roll) does not work for the wireframes.
@@ -50,6 +51,8 @@
  With this, you can add the 32 edges that a 3x3x1 wireframe of cubes needs to a single model, and set the `faces` of each element according to the example of the given template model.
 
  An alternative to making one single 3x3 model in this example would be to create variations of the standard template that have missing edges, so you can combine multiple of these to create a shape with no duplicate edges.
+
+ Yet another alternative would be to just make one single 3x3x1 box.
 
 ## Credits
  All of the contents of this resource pack were written by me, but the original problem statement as well as some suggestions for debugging have been provided by [Mqxx](https://github.com/Mqxx).
