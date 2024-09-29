@@ -1,5 +1,6 @@
 # WireframeDisplay
  A small resource pack that makes it easy to create and display wireframes that look like vanilla.
+![2024-09-29_00 41 54](https://github.com/user-attachments/assets/c8f58cc7-d075-4c84-8fa7-8e612ae91fd5)
 
 ## Spawning a wireframe display
  The wireframe displays are just item models. You can spawn them as a display like this:
