@@ -64,7 +64,8 @@ void main() {
         vec2 lineScreenDirection = normalize((ndc2.xy - ndc1.xy) * ScreenSize);
         vec2 lineOffset = vec2(-lineScreenDirection.y, lineScreenDirection.x) * LineWidth / ScreenSize;
 
-        if (lineOffset.x < 0.0) {
+        float topDownZ = dot(vec2(-ModelViewMat[2][0], ModelViewMat[0][0]), Position.xz);
+        if ((topDownZ > 0.0) ^^ lineOffset.x < 0.0) {
             lineOffset *= -1.0;
         }
 
