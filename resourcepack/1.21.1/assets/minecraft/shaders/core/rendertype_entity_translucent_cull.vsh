@@ -47,7 +47,7 @@ void main() {
 
         vec4 widthColor = texelFetch(Sampler0, coords + ivec2(4, 0), 0);
         if (widthColor.a > 0.5) {
-            LineWidth = widthColor.r * 255. + widthColor.g + widthColor.b / 255.;
+            LineWidth = dot(widthColor.rgb, vec3(1.0, 1./256., 1./65536)) * 255.;
         }
 
         isLine = 1;

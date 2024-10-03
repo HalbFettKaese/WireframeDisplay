@@ -21,7 +21,7 @@
  The pack makes it very easy to add more types of wireframes. You can look at the existing types to get examples, but when you want to make your own, you just have to follow these steps:
  1. Create a new texture. For this, just copy one of the existing textures and rename it.
  2. Edit the wireframe color. The color is written into the 2x3 area to the right of the marker pixels in the top left corner. (DO NOT CHANGE THE MARKER PIXELS THAT ARE IN THE CORNER)
- 3. Edit the wireframe thickness. (default: 2.5 pixels) The thickness is written into the 2x3 area to the right of the color pixels. A number x is encoded as `(x*255², x*255, x, 255)/255`. If you don't want to change the thickness, just keep those pixels transparent.
+ 3. Edit the wireframe thickness. (default: 2.5 pixels) The thickness is written into the 2x3 area to the right of the color pixels. A number x is encoded as a color by first [converting it to a hexadecimal](https://www.rapidtables.com/convert/number/decimal-to-hex.html), which, for example, converts `4.625` in decimal to `4.A` in hexadecimal. Then you take the first two digits before the `.` and the first four digits after the `.` and combine them into one hex code, in this example `#04A000`. You just fill the 2x3 thickness pixels to use this color, and it will use your original `x` as the line thickness. If you don't want to change the thickness, just keep those pixels transparent.
  4. Create a new model of the following format:
  ```json
  {
@@ -69,7 +69,7 @@
  ```
 
 ## Credits
- All of the contents of this resource pack were written by me, but the original problem statement as well as some suggestions for debugging have been provided by [Mqxx](https://github.com/Mqxx).
+ All of the contents of this resource pack were written by me, but the original problem statement as well as some suggestions for debugging have been provided by [Mqxx](https://github.com/Mqxx). Also thanks to Discord user merak48763 for suggesting a better format to encode the line width.
 
 If you want to thank me for my work, please consider making a small donation.\
 [![Donate](https://img.shields.io/badge/Donate-Ko--fi-green.svg)](https://ko-fi.com/halbfettkaese)
