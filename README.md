@@ -9,6 +9,9 @@
  ```
  # Spawn white wireframe (like from F3 + B):
  /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:item_model":"wireframe:wireframe_white"}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
+
+ # Spawn wireframe that is tinted red using custom model data:
+ /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:item_model":"wireframe:wireframe_white",custom_model_data:{colors:[[1,0,0]]}}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
  
  # Spawn thick white wireframe
  /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:item_model":"wireframe:wireframe_white_thick"}} ,transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}

@@ -1,6 +1,12 @@
 {
     "model": {
         "type": "minecraft:model",
-        "model": "wireframe:item/wireframe_white"
+        "model": "wireframe:item/wireframe_white",
+        "tints": [
+            {
+                "type": "minecraft:custom_model_data",
+                "default": [1, 1, 1]
+            }
+        ]
     }
 }

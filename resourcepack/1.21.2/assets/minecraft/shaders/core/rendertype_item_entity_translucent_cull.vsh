@@ -80,7 +80,7 @@ void main() {
         }
 
         vertexDistance = fog_distance(Position, FogShape);
-        vertexColor = texelFetch(Sampler0, coords + ivec2(2, 0), 0);
+        vertexColor = Color * texelFetch(Sampler0, coords + ivec2(2, 0), 0);
         texCoord0 = UV0;
         texCoord1 = UV1;
         texCoord2 = UV2;
