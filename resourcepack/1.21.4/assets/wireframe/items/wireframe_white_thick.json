@@ -1,0 +1,6 @@
+{
+    "model": {
+        "type": "minecraft:model",
+        "model": "wireframe:item/wireframe_white_thick"
+    }
+}
