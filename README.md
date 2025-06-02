@@ -57,20 +57,6 @@
 
  Yet another alternative would be to just make one single 3x3x1 box.
 
-## In earlier versions
- The pack is designed to work for 1.21.2, but has overlays that let it work in earlier versions. For this, the standard item models are also defined as different `custom_model_data` variants of `coal` items. So in 1.21.1, you can use these commands instead:
-
- ```
- # Spawn white wireframe (like from F3 + B):
- /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:custom_model_data":1}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
-
- # Spawn thick white wireframe
- /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:custom_model_data":2}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
-
- # Spawn black wireframe (like the block selection outline)
- /execute align xyz run summon item_display ~ ~ ~ {item: {id:"coal",components: {"minecraft:custom_model_data":3}}, transformation:{scale:[1f,1f,1f],left_rotation:[0f,0f,0f, 1f],right_rotation:[0f,0f,0f,1f],translation:[0.5,0.5,0.5]}}
- ```
-
 ## Credits
  All of the contents of this resource pack were written by me, but the original problem statement as well as some suggestions for debugging have been provided by [Mqxx](https://github.com/Mqxx). Also thanks to Discord user merak48763 for suggesting a better format to encode the line width.
 
